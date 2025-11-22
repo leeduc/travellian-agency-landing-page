@@ -85,11 +85,12 @@ function NavBar() {
             <div className="flex flex-col gap-8 mt-8 mx-4">
               {links.map((link, index) => (
                 <div key={index}>
-                  <p
+                  <a
+                    href={link.href}
                     className={`hover:text-primary cursor-pointer flex items-center gap-2  font-[500] text-white`}
                   >
-                    {link}
-                  </p>
+                    {link.name}
+                  </a>
                   {currentIndex === index && (
                     <div className="w-12 h-1 bg-primary"></div>
                   )}
