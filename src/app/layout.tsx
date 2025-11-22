@@ -16,9 +16,10 @@ export const metadata: Metadata = {
     title: "Thanh Loc Transfer | Da Nang Airport Transfer & Tours",
     description: "Reliable Da Nang airport transfer & daily tours – safe rides, friendly drivers, and the best price guarantee.",
     url: "https://thanhloctransfer.com/",
+    siteName: 'Thanh Loc Transfer | Da Nang Airport Transfer & Tours',
     images: [
       {
-        url: "/images/new/og.png",
+        url: "https://thanhloctransfer.com/images/new/og.png",
         width: 1200,
         height: 630,
       },
