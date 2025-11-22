@@ -22,7 +22,7 @@ function FooterSection() {
   const contacts = [
     {
       name: "+(84) 934 970 677",
-      href: "tel:+84934970677",
+      href: "https://wa.me/+84934970677",
     },
     {
       name: "nguyenbathanhlocdn@gmail.com",

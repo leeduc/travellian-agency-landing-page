@@ -34,6 +34,7 @@ function NavBar() {
               <div key={index}>
                 <a
                   href={link.href}
+                  style={{ textShadow: "3px 3px 6px rgba(0,0,0,0.6)" }}
                   className={`hover:text-primary cursor-pointer flex items-center gap-2  font-[500] text-white`}
                 >
                   { link.name }

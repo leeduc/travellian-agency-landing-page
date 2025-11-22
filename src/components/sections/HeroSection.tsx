@@ -52,7 +52,7 @@ function HeroSection({
         <div className="bg-white py-10 flex flex-col rounded-t-[16px] md:rounded-t-none md:flex-row gap-[40px] px-4 md:px-20">
           <div>
             <p className="text-xl text-customDark mb-2 font-semibold">Contact Us (Whatsapp)</p>
-            <a href="tel:+84934970677" className="text-xl mb-4 text-sky-600">+(84) 934 970 677</a>
+            <a href="https://wa.me/+84934970677" target="_blank" rel="noopener noreferrer" className="text-xl mb-4 text-sky-600">+(84) 934 970 677</a>
           </div>
 
           <div>
@@ -67,7 +67,7 @@ function HeroSection({
               playFair.className
             )}
           >
-            <p className="text-[36px]">Book Now</p>
+            <a href="https://wa.me/+84934970677" target="_blank" rel="noopener noreferrer" className="text-[36px]">Book Now</a>
           </div>
           <ArrowRight color="#fff" />
         </div>

@@ -62,7 +62,7 @@ const MainButton = forwardRef<HTMLButtonElement, MainButtonProps>(
         className={`${
           isSecondaryVariant ? " text-white  bg-secondary" : "bg-primary"
         } text-white shadow-xl ${propWidth} md:${propWidth}  select-none rounded-[0.625rem] hover:opacity-90 ${variant_hover} ${size_height} ${classes}`}
-        onClick={!disabled ? action : () => undefined}
+        onClick={!disabled ? () => window.open("https://wa.me/+84934970677") : () => undefined}
         type={isSubmitable ? "submit" : "button"}
         ref={ref}
         disabled={disabled}
