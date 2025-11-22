@@ -41,7 +41,7 @@ function FooterSection() {
   return (
     <section className="bg-[#172432] text-white pb-[100px] px-4 xl:px-[182px] flex flex-col gap-8 md:flex-row justify-between pt-[100px]">
       <div>
-        <div>
+        <div className="mb-4">
           <img src="/images/new/text-logo-234.png" alt="footer logo" />
         </div>
         <p>Copyright © ThanhLocTransfer 2025</p>
@@ -75,9 +75,9 @@ function FooterSection() {
         <div className="flex gap-3 items-center">
           {socials.map((item, index) => (
             <div key={index}>
-                <a href={item.url} target="_blank" rel="noopener noreferrer">
-                  <img src={item.src} alt={item.alt} />
-                </a>
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                <img src={item.src} alt={item.alt} />
+              </a>
             </div>
           ))}
         </div>
