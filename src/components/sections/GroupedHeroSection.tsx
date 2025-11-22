@@ -44,7 +44,7 @@ function GroupedHeroSection({ currentIndex, setCurrentIndex }: IProps) {
 
   return (
     <div
-      className={`flex flex-col w-full ${getCurrentBackground()} md:w-screen bg-no-repeat bg-cover`}
+      className={`flex flex-col w-full ${getCurrentBackground()} md:w-screen bg-no-repeat bg-bottom bg-cover`}
     >
       <NavBar />
       <HeroSection

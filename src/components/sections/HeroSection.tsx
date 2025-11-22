@@ -49,25 +49,25 @@ function HeroSection({
       </div>
 
       <div className="flex flex-col md:flex-row mt-8 md:mt-[170px] mx-4 md:mx-0">
-        <div className="bg-white py-10 flex flex-col rounded-t-[16px] md:rounded-t-none md:flex-row gap-[40px] px-4 md:px-20">
+        <div className="bg-white py-5 md:py-10 flex flex-col rounded-t-[16px] md:rounded-t-none md:flex-row gap-[10px] md:gap-[40px] px-4 md:px-20">
           <div>
             <p className="text-xl text-customDark mb-2 font-semibold">Contact Us (Whatsapp)</p>
-            <a href="https://wa.me/+84934970677" target="_blank" rel="noopener noreferrer" className="text-xl mb-4 text-sky-600">+(84) 934 970 677</a>
+            <a href="https://wa.me/+84934970677" target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl mb-4 text-sky-600">🇻🇳 +(84) 934 970 677</a>
           </div>
 
           <div>
             <p className="text-xl text-customDark mb-2 font-semibold">Email</p>
-            <a href="mailto:nguyenbathanhlocdn@gmail.com" className="text-xl mb-4 underline text-sky-600">nguyenbathanhlocdn@gmail.com</a>
+            <a href="mailto:nguyenbathanhlocdn@gmail.com" className="text-xl md:text-2xl mb-4 underline text-sky-600">nguyenbathanhlocdn@gmail.com</a>
           </div>
         </div>
-        <div className="bg-primary flex items-center justify-between py-10 gap-[10px] px-4 md:px-[20px] rounded-b-[20px] md:rounded-bl-none md:rounded-r-[20px]">
+        <div className="bg-primary flex items-center justify-between py-5 md:py-10 gap-[10px] px-4 md:px-[20px] rounded-b-[20px] md:rounded-bl-none md:rounded-r-[20px]">
           <div
             className={cn(
               "text-white flex gap-2 md:gap-0 md:block",
               playFair.className
             )}
           >
-            <a href="https://wa.me/+84934970677" target="_blank" rel="noopener noreferrer" className="text-[36px]">Book Now</a>
+            <a href="https://wa.me/+84934970677" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-[36px]">Book Now</a>
           </div>
           <ArrowRight color="#fff" />
         </div>
