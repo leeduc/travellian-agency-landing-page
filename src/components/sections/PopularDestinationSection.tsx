@@ -7,37 +7,37 @@ import customVariants from "@/lib/animation";
 function PopularDestinationSection() {
   const data = [
     {
-      title: "Monument of Berlin",
-      location: "Berlin, Germany",
-      imageUrl: "/images/pd_1.jpg",
+      title: "Hoi An Old Town",
+      location: "Hoi An, Vietnam",
+      imageUrl: "/images/places/hoi-an-2.jpeg",
     },
     {
-      title: "Millennium Bridge",
-      location: "London, United Kingdom",
-      imageUrl: "/images/pd_2.jpg",
+      title: "Golden Bridge",
+      location: "Da Nang, Vietnam",
+      imageUrl: "/images/places/cau-vang.jpg",
     },
     {
-      title: "Rialto Bridge",
-      location: "Venice, Italy",
-      imageUrl: "/images/pd_3.jpg",
+      title: "Marble Mountains",
+      location: "Da Nang, Vietnam",
+      imageUrl: "/images/places/ngu-hanh-son.jpg",
     },
     {
-      title: "Millennium Bridge",
-      location: "London, United Kingdom",
-      imageUrl: "/images/pd_2.jpg",
+      title: "Hue Imperial City",
+      location: "Hue, Vietnam",
+      imageUrl: "/images/places/dai-noi.jpg",
     },
   ];
   return (
-    <section className="">
+    <section id="explorer">
       <div className="flex  flex-col md:flex-row justify-between items-end">
         <div>
           <Header
             title="Popular Destinations"
-            description="Most popular destinations around the world, from historical places to natural wonders."
+            description="Discover the highlights of Central Vietnam, where history, culture, and nature come together beautifully."
             isLongUnderline
           />
         </div>
-        <div className="flex items-center gap-[20px]">
+        {/* <div className="flex items-center gap-[20px]">
           <div className="hover:cursor-pointer">
             <img
               src="/images/left_icon.svg"
@@ -52,7 +52,7 @@ function PopularDestinationSection() {
               className="w-[40px]"
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <motion.div

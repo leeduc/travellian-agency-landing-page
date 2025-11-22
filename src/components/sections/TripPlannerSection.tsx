@@ -42,7 +42,7 @@ function TripPlannerSection() {
           description="20 years from now you will be more disappointed by the things that you didn't do. Stop regretting and start travelling, start throwing off the bowlines."
         />
         <div className="relative inline-block z-10 mt-[35px]">
-          <MainButton text="View all trip plans" classes="w-[180px]" />
+          <MainButton text="Book Now" classes="w-[180px]" />
           <div className="absolute -top-4 -left-4 w-[43px] h-[43px] bg-[#172432] -z-10"></div>
           <div className="absolute -bottom-4 -right-4 w-[43px] h-[43px] bg-[#767E86] -z-10"></div>
         </div>

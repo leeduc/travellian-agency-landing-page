@@ -30,9 +30,10 @@ const config = {
         64: "64px",
       },
       backgroundImage: {
-         "hero": "url(/images/hero_image.jpg)",
-         "hero-2": "url(/images/bg_hero_4.jpg)",
-         "hero-3": "url(/images/bg_hero_3.jpg)",
+         "hero": "url(/images/new/bg-1.jpg)",
+         "hero-2": "url(/images/new/bg-2.jpg)",
+         "hero-3": "url(/images/new/bg-3.jpeg)",
+         "hero-4": "url(/images/new/bg-4.jpg)",
       },
       keyframes: {
         "accordion-down": {

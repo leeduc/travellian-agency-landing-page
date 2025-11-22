@@ -5,18 +5,18 @@ import { ArrowRight } from "lucide-react";
 
 function BlogSection() {
   return (
-    <section>
+    <section id="blog">
       <div>
         <Header
           title="Our Blog"
-          description="An insight into the incredible experience in the world"
+          description="Discover Inspiring Stories and Amazing Travel Experiences"
         />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mt-12 md:mt-[80px]">
         <div className="w-full">
           <img
-            src="/images/blog.jpg"
+            src="/images/places/son-tra.jpg"
             alt="feature blog image"
             className="h-[500px] rounded-[26px] w-full object-cover"
           />
@@ -28,24 +28,21 @@ function BlogSection() {
               "leading-tight text-[30px] md:text-[54px]"
             )}
           >
-            Beautiful Italy <br />
-            Let&apos;s travel
+            Da Nang named among<br />
+            Asia’s top destinations for 2025
           </p>
           <p className="py-4">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness. No
-            one rejects, dislike, or avoids plasure itself, because it is
-            pleasure, but because those who do not know how to pursue pleasure
-            rationally encounter consequences that are extremly painful. Nor
-            again is there anyone who loves or pursues.
+            Da Nang has been honored with the third spot in Time Out magazine's list of the eight best destinations to visit in Asia in 2025.
+
+Time Out highlighted Da Nang as a coastal city that is not overcrowded yet offers a wealth of attractions, culinary experiences, and vibrant activities, meeting the publication's selection criteria.
+
+"Da Nang has long been a favorite beach destination for locals. Known for its charm, this coastal gem is rapidly catching up with Ho Chi Minh City and Hanoi with its growing scene of trendy restaurants and bars," said Liv Kelly, editor at Time Out.
           </p>
 
-          <div className="text-primary flex items-center gap-3">
+          <a href="https://vietnamnet.vn/en/da-nang-named-among-asia-s-top-destinations-for-2025-2355876.html" target="_blank" rel="noopener noreferrer" className="text-primary flex items-center gap-3">
             Read More
             <ArrowRight color="#FF7757" />
-          </div>
+          </a>
         </div>
       </div>
     </section>

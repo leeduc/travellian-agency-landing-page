@@ -20,50 +20,6 @@ function HeroSection({
   setCurrentIndex,
   setPauseAutoPlay,
 }: IProps) {
-  const destinations = [
-    {
-      value: "dubai",
-      displayName: "Dubai",
-    },
-    {
-      value: "brazil",
-      displayName: "Brazil",
-    },
-  ];
-
-  const persons = [
-    {
-      value: "1",
-      displayName: "1",
-    },
-    {
-      value: "2",
-      displayName: "2",
-    },
-  ];
-
-  const checkIn = [
-    {
-      value: "Sun, 17th Sep 2020",
-      displayName: "Sun, 17th Sep 2020",
-    },
-    {
-      value: "Sun, 18th Sep 2020",
-      displayName: "Sun, 18th Sep 2020",
-    },
-  ];
-
-  const checkOut = [
-    {
-      value: "Sun, 17th Oct 2020",
-      displayName: "Sun, 17th Oct 2020",
-    },
-    {
-      value: "Sun, 18th Oct 2020",
-      displayName: "Sun, 18th Oct 2020",
-    },
-  ];
-
   const handleArrowUpClick = () => {
     setPauseAutoPlay(true);
     setCurrentIndex(currentIndex === 2 ? 0 : currentIndex + 1);
@@ -83,97 +39,35 @@ function HeroSection({
             "text-[40px] md:text-[84px] text-white leading-tight",
             "mx-8 xl:mx-[184px]"
           )}
+          style={{ textShadow: "3px 3px 6px rgba(0,0,0,0.6)" }}
         >
           Start your unforgettable <br /> journey with us.
         </p>
-        <p className="text-24 text-white font-normal mt-3 mx-8 xl:mx-[184px]">
+        <p className="text-24 text-white font-normal mt-3 mx-8 xl:mx-[184px]" style={{ textShadow: "3px 3px 6px rgba(0,0,0,0.6)" }}>
           The best travel for your jouney begins now
         </p>
       </div>
 
       <div className="flex flex-col md:flex-row mt-8 md:mt-[170px] mx-4 md:mx-0">
-        <div className="bg-white py-16 flex flex-col rounded-t-[16px] md:rounded-t-none md:flex-row gap-[40px] px-4 md:px-32">
+        <div className="bg-white py-10 flex flex-col rounded-t-[16px] md:rounded-t-none md:flex-row gap-[40px] px-4 md:px-20">
           <div>
-            <p className="text-customGray mb-4">Destination</p>
-            <Select>
-              <SelectTrigger className="w-full border-t-0 border-x-0 border-b border-b-black rounded-none">
-                <SelectValue placeholder="Select a destination" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  {destinations.map((item, index) => (
-                    <SelectItem key={index} value={item.value}>
-                      {item.displayName}
-                    </SelectItem>
-                  ))}
-                </SelectGroup>
-              </SelectContent>
-            </Select>
+            <p className="text-xl text-customDark mb-2 font-semibold">Contact Us (Whatsapp)</p>
+            <a href="tel:+84934970677" className="text-xl mb-4 text-sky-600">+(84) 934 970 677</a>
           </div>
 
           <div>
-            <p className="text-customGray mb-4">Person</p>
-            <Select>
-              <SelectTrigger className="w-full border-t-0 border-x-0 border-b border-b-black rounded-none">
-                <SelectValue placeholder="Select persons" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  {persons.map((item, index) => (
-                    <SelectItem key={index} value={item.value}>
-                      {item.displayName}
-                    </SelectItem>
-                  ))}
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-          </div>
-
-          <div>
-            <p className="text-customGray mb-4">Check in</p>
-            <Select>
-              <SelectTrigger className="w-full border-t-0 border-x-0 border-b border-b-black rounded-none">
-                <SelectValue placeholder="Select checkin" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  {checkIn.map((item, index) => (
-                    <SelectItem key={index} value={item.value}>
-                      {item.displayName}
-                    </SelectItem>
-                  ))}
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-          </div>
-
-          <div>
-            <p className="text-customGray mb-4">Check out</p>
-            <Select>
-              <SelectTrigger className="w-full border-t-0 border-x-0 border-b border-b-black rounded-none">
-                <SelectValue placeholder="Select checkout" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  {checkOut.map((item, index) => (
-                    <SelectItem key={index} value={item.value}>
-                      {item.displayName}
-                    </SelectItem>
-                  ))}
-                </SelectGroup>
-              </SelectContent>
-            </Select>
+            <p className="text-xl text-customDark mb-2 font-semibold">Email</p>
+            <a href="mailto:nguyenbathanhlocdn@gmail.com" className="text-xl mb-4 underline text-sky-600">nguyenbathanhlocdn@gmail.com</a>
           </div>
         </div>
-        <div className="bg-primary flex items-center justify-between py-16 gap-[40px] px-4 md:px-[20px] rounded-b-[20px] md:rounded-bl-none md:rounded-r-[20px]">
+        <div className="bg-primary flex items-center justify-between py-10 gap-[10px] px-4 md:px-[20px] rounded-b-[20px] md:rounded-bl-none md:rounded-r-[20px]">
           <div
             className={cn(
               "text-white flex gap-2 md:gap-0 md:block",
               playFair.className
             )}
           >
-            <p className="text-[36px]">Book</p>
-            <p className="text-[36px]">Now</p>
+            <p className="text-[36px]">Book Now</p>
           </div>
           <ArrowRight color="#fff" />
         </div>

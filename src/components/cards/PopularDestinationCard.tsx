@@ -21,10 +21,11 @@ function PopularDestinationCard({ title, location, imageUrl }: IProps) {
             playFair.className,
             "text-[28px] text-white font-medium"
           )}
+          style={{ textShadow: "3px 3px 6px rgba(0,0,0,0.6)" }}
         >
           {title}
         </p>
-        <div className="text-[24px] text-white mt-4 flex items-center">
+        <div className="text-[24px] text-white mt-4 flex items-center" style={{ textShadow: "3px 3px 6px rgba(0,0,0,0.6)" }}>
           <MapPin color="#fff" />
           &nbsp;{location}
         </div>

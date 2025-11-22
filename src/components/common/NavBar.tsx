@@ -13,24 +13,31 @@ function NavBar() {
     setMenu(!menu);
   };
 
-  const links = ["Home", "Explore", "Travel", "Blog", "Pricing"];
+  const links = [
+    { name: "Home", href: "#" },
+    { name: "Explore", href: "#explorer" },
+    { name: "Pricing", href: "#pricing" },
+    { name: "Blog", href: "#blog" },
+    { name: "Feedbacks", href: "#feedbacks" },
+  ]
 
   return (
-    <div className="md:sticky md:top-0   md:shadow-none z-20 ">
+    <div className="md:top-0   md:shadow-none z-20 ">
       {/* DESKTOP */}
       <div className=" hidden lg:block animate-in fade-in zoom-in bg-transparent p-4">
         <div className="flex justify-between mx-8 xl:mx-[184px] items-center">
           <div>
-            <img src="/images/logo.png" alt="logo" />
+            <img src="/images/new/text-logo-50.png" alt="logo" />
           </div>
           <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none">
             {links.map((link, index) => (
               <div key={index}>
-                <p
+                <a
+                  href={link.href}
                   className={`hover:text-primary cursor-pointer flex items-center gap-2  font-[500] text-white`}
                 >
-                  {link}
-                </p>
+                  { link.name }
+                </a>
                 {currentIndex === index && (
                   <div className="w-12 h-1 bg-primary"></div>
                 )}
@@ -38,15 +45,8 @@ function NavBar() {
             ))}
           </div>
           <div className="flex items-center gap-[40px] select-none">
-            <Link
-              href="/auth/login"
-              className="hover:text-primary text-white cursor-pointer flex items-center gap-2 "
-            >
-              Login
-            </Link>
-
             <MainButton
-              text="Signup"
+              text="Book Now"
               classes="bg-primary rounded-[12px] w-[134px]"
             />
           </div>
@@ -60,7 +60,7 @@ function NavBar() {
       >
         <div className="flex justify-between mx-[10px]">
           <div className="flex gap-[50px] text-[16px] items-center select-none">
-            <img src="/images/logo.png" alt="logo" className="w-[7rem]" />
+            <img src="/images/new/text-logo-50.png" alt="logo" className="w-[7rem]" />
           </div>
           <div className="flex items-center gap-[40px]">
             {menu ? (
@@ -97,15 +97,8 @@ function NavBar() {
               ))}
 
               <div className="flex flex-col gap-[40px] select-none">
-                <Link
-                  href="/auth/login"
-                  className="hover:text-primary text-white cursor-pointer flex items-center gap-2 "
-                >
-                  Login
-                </Link>
-
                 <MainButton
-                  text="Signup"
+                  text="Book Now"
                   classes="bg-[#B63E22] rounded-[12px] w-[134px]"
                 />
               </div>

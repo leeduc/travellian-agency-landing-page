@@ -27,10 +27,10 @@ export default function Home() {
 
         <SpecialOfferSection />
         <BlogSection />
-        <TripPlannerSection />
+        {/* <TripPlannerSection /> */}
         <DestinationGallerySection />
         <TestimonialSection />
-        <NewsletterSection />
+        {/* <NewsletterSection /> */}
       </div>
       <FooterSection />
     </main>

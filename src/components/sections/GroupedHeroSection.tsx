@@ -16,9 +16,9 @@ function GroupedHeroSection({ currentIndex, setCurrentIndex }: IProps) {
     if (currentIndex === 0) {
       return "bg-hero";
     } else if (currentIndex === 1) {
-      return "bg-hero-2";
-    } else {
       return "bg-hero-3";
+    } else {
+      return "bg-hero-4";
     }
   };
 
@@ -44,7 +44,7 @@ function GroupedHeroSection({ currentIndex, setCurrentIndex }: IProps) {
 
   return (
     <div
-      className={`flex flex-col w-full ${getCurrentBackground()} md:h-screen bg-no-repeat bg-bottom`}
+      className={`flex flex-col w-full ${getCurrentBackground()} md:w-screen bg-no-repeat bg-cover`}
     >
       <NavBar />
       <HeroSection
